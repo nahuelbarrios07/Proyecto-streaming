@@ -3,13 +3,12 @@
     --color-logo: rgb(239, 239, 239);
     --color-texto: rgb(255, 255, 255);
     --fuente-logo: 'Ubuntu', sans-serif;
-    --texto-principal: 'Roboto', sans-serif;
-    --menu-principal: 'Roboto Condensed', sans-serif;
+    --texto-pagina: 'Figtree', sans-serif;
     --vivo:rgb(255, 0, 0);
     --rojo: rgb(255, 0, 115);
     --verde: rgb(121, 255, 18);
     --azul: rgb(0, 128, 255);
-    --violeta-claro: rgb(85, 0, 255);
+    --fondo-canales: rgb(199, 195, 206);
 }
 
 *{
@@ -28,6 +27,7 @@ body{
     font-family: var(--fuente-logo);
     color: var(--color-logo);
     padding: 30px 30px 30px 0px;
+    font-weight: 700;
 }
 
 .fondo-nav{
@@ -44,7 +44,7 @@ body{
 
 .encabezado a{
     text-decoration: none;
-    font-family: var(--menu-principal);
+    font-family: var(--texto-pagina);
     color: var(--color-texto);
     margin-left: 10px;
     margin-right: 10px;
@@ -52,7 +52,7 @@ body{
 
 #btn-vivo{
     color: whitesmoke;
-    font-family: var(--menu-principal);
+    font-family: var(--texto-pagina);
     font-weight: 600;
     background-color: var(--vivo);
     height: 35px;
@@ -77,14 +77,14 @@ body{
 }
 
 .programa-principal h1{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     font-weight: 700;
     color: var(--color-texto);
     text-shadow: 1px 1px 3px black;
 }
 
 .programa-principal p{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     font-weight: 700;
     color: var(--color-texto);
     text-shadow: 1px 1px 3px black;
@@ -95,7 +95,7 @@ body{
 
 #btn-reproducir{
     color: whitesmoke;
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     font-weight: 700;
     background-color: black;
     height: 35px;
@@ -107,7 +107,7 @@ body{
 
 #btn-mas-info{
     color: whitesmoke;
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     font-weight: 700;
     background-color: black;
     height: 35px;
@@ -119,7 +119,7 @@ body{
 
 #clasificacion{
     color: whitesmoke;
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     font-weight: 700;
     background: linear-gradient(#f70358, #ff8903);
     height: 35px;
@@ -131,37 +131,96 @@ body{
 /*Programas recomendados*/
 
 .otros-programas{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     color: var(--color-texto);
     font-weight: 300;
     margin-left: 5%;
+    text-shadow: 1px 1px 3px black;
+}
+
+.recomendados{
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 /*Tamaño de las imagenes de los programas*/
 
+h4{
+    font-family: var(--fuente-logo);
+    font-weight: 500;
+    text-shadow: 1px 1px 3px black;
+}
+
 #Bru{
-    height: 150px;
-    width: 350px;
+    background-image: url(../img/Bru\ y\ sus\ amigos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 55%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
 }
 
 #Moroko{
-    height: 150px;
-    width: 350px;
+    background-image: url(../img/Moroko\ diversión.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 65%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
 }
 
 #Zuleyha{
-    height: 150px;
-    width: 350px;
+    background-image: url(../img/Zuleyha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 76%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
 }
 
 #Fugitiva{
-    height: 150px;
-    width: 350px;
+    background-image: url(../img/Fugitiva.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 85%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+#Masterchef{
+    background-image: url(../img/Masterchef.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 20%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+#Vivomardel{
+    background-image: url(../img/Mardel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 85%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
 }
 /*Próximamente en Televisión Creativa*/
 
 .proximamente{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     color: var(--color-texto);
     font-weight: 300;
     margin-left: 5%;
@@ -173,10 +232,11 @@ body{
     display: flex;
     align-items:center;
     justify-content: center;
+    text-shadow: 1px 1px 3px black;
 }
 
 .pgm-horarios{
-    background-image: url(../img/Ariel\ en\ su\ salsa.jpg);
+    background-image: url(../img/La\ comida\ en\ su\ salsa.jpg);
     background-size: cover;
     background-position: center;
     background-position-x: 85%;
@@ -248,16 +308,16 @@ body{
     width: 90%;
     margin: auto;
     gap: 15px;
+    padding: 25px 0px 25px 0px;
+
 }
 
 /*Logo de los canales propios*/
 
 img{
-    height: 65px;
+    height: 115px;
     width: 130px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 30px;
+    margin: 40px 40px 40px 40px;
 }
 
 /*Texto de los canales propios*/
@@ -265,57 +325,140 @@ img{
 #nombre-canales-propios{
     margin-left: 45px;
     margin-right: 45px;
-    font-weight: 700;
+    font-family: var(--fuente-logo);
+    font-weight: 500;
+    margin-left: 5%;
 }
 
+#Logo-canales{
+    height: 100px;
+    width: 100px;
+    padding-left: 2.3vh;
+    padding-bottom: 2.3vh;
+} 
+
 #mardel{
-    height: 150px;
-    width: 240px;
-    background-color: var(--azul);
-    border-radius: 10px;
+    background-color: var(--fondo-canales);
+    height: 300px;
+    width: 140px;
+    padding: 25px 25px 25px 25px;
 }
 
 #bahia{
-    height: 150px;
-    width: 240px;
-    background-color: var(--verde);
-    border-radius: 10px;
+    background-color: var(--fondo-canales);
+    height: 300px;
+    width: 140px;
+    padding: 25px 25px 25px 25px;
 }
 
 #rosario{
-    height: 150px;
-    width: 240px;
-    background-color: var(--rojo);
-    border-radius: 10px;
+    background-color: var(--fondo-canales);
+    height: 300px;
+    width: 140px;
+    padding: 25px 25px 25px 25px;
 }
 
 #quilmes{
-    height: 150px;
-    width: 240px;
-    background-color: var(--azul);
-    border-radius: 10px;
+    background-color: var(--fondo-canales);
+    height: 300px;
+    width: 140px;
+    padding: 25px 25px 25px 25px;
 }
 
 #cordoba{
-    height: 150px;
-    width: 240px;
-    background-color: var(--verde);
-    border-radius: 10px;
+    background-color: var(--fondo-canales);
+    height: 300px;
+    width: 140px;
+    padding: 25px 25px 25px 25px;
 }
 
 .canales-propios{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     color: var(--color-texto);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-weight: 300;
+    margin-left: 5%;
 }
 
 .canales-propios h2{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     color: var(--color-texto);
     font-weight: 500;
 }
 
+/* Podcast */
+.podcast{
+    font-family: var(--texto-pagina);
+    color: var(--color-texto);
+    font-weight: 300;
+    margin-left: 5%;
+}
+.carrousel-podcast{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.primer-podcast{
+    background-image: url(../img/Microfono.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 80%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+.segundo-podcast{
+    background-image: url(../img/Microfono.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 80%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+.tercer-podcast{
+    background-image: url(../img/Microfono.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 80%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+.cuarto-podcast{
+    background-image: url(../img/Microfono.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 80%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+.quinto-podcast{
+    background-image: url(../img/Microfono.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 80%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+.sexto-podcast{
+    background-image: url(../img/Microfono.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 80%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
 /* Pie de página */
 
 .contenedor-pie-de-pagina{
@@ -326,12 +469,12 @@ img{
 }
 
 .direccion{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     color: var(--color-texto);
 }
 
 .redes-sociales{
-    font-family: var(--texto-principal);
+    font-family: var(--texto-pagina);
     font-weight: 600;
     color: var(--color-texto);
 }
@@ -339,29 +482,24 @@ img{
 #facebook{
     height: 50px;
     width: 50px;
-    padding:20px 20px 20px 20px;
 }
 
 #twitter{
     height: 50px;
     width: 50px;
-    padding:20px 20px 20px 20px;
 }
 
 #instagram{
     height: 50px;
     width: 50px;
-    padding:20px 20px 20px 20px;
 }
 
 #twitch{
     height: 50px;
     width: 50px;
-    padding:20px 20px 20px 20px;
 }
 
 #youtube{
     height: 50px;
     width: 50px;
-    padding:20px 20px 20px 20px;
 }
