@@ -1,0 +1,367 @@
+:root{
+    --fondo-streaming: rgb(25, 25, 27);
+    --color-logo: rgb(239, 239, 239);
+    --color-texto: rgb(255, 255, 255);
+    --fuente-logo: 'Ubuntu', sans-serif;
+    --texto-principal: 'Roboto', sans-serif;
+    --menu-principal: 'Roboto Condensed', sans-serif;
+    --vivo:rgb(255, 0, 0);
+    --rojo: rgb(255, 0, 115);
+    --verde: rgb(121, 255, 18);
+    --azul: rgb(0, 128, 255);
+    --violeta-claro: rgb(85, 0, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: var(--fondo-streaming);
+}
+
+/*Logo de Televisión Creativa*/
+
+.logo{
+    font-family: var(--fuente-logo);
+    color: var(--color-logo);
+    padding: 30px 30px 30px 0px;
+}
+
+.fondo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.encabezado{
+    padding: 35px 35px 35px 0px;
+}
+
+.encabezado a{
+    text-decoration: none;
+    font-family: var(--menu-principal);
+    color: var(--color-texto);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#btn-vivo{
+    color: whitesmoke;
+    font-family: var(--menu-principal);
+    font-weight: 600;
+    background-color: var(--vivo);
+    height: 35px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/*Programa principal*/
+
+.imagen-principal{
+    background-image: url(../img/Telediario.jpg);    
+    background-position: center;
+    background-position-y: 40%;
+    background-position-x: 20%;
+    height: 85vh;
+}
+
+.programa-principal{
+    padding-top: 25%;
+    margin-left: 5%;
+}
+
+.programa-principal h1{
+    font-family: var(--texto-principal);
+    font-weight: 700;
+    color: var(--color-texto);
+    text-shadow: 1px 1px 3px black;
+}
+
+.programa-principal p{
+    font-family: var(--texto-principal);
+    font-weight: 700;
+    color: var(--color-texto);
+    text-shadow: 1px 1px 3px black;
+    max-width: 70%;
+}
+
+/*Botones del programa principal*/
+
+#btn-reproducir{
+    color: whitesmoke;
+    font-family: var(--texto-principal);
+    font-weight: 700;
+    background-color: black;
+    height: 35px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#btn-mas-info{
+    color: whitesmoke;
+    font-family: var(--texto-principal);
+    font-weight: 700;
+    background-color: black;
+    height: 35px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#clasificacion{
+    color: whitesmoke;
+    font-family: var(--texto-principal);
+    font-weight: 700;
+    background: linear-gradient(#f70358, #ff8903);
+    height: 35px;
+    width: 50px;
+    border: none;
+    border-radius: 4px;
+}
+
+/*Programas recomendados*/
+
+.otros-programas{
+    font-family: var(--texto-principal);
+    color: var(--color-texto);
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+/*Tamaño de las imagenes de los programas*/
+
+#Bru{
+    height: 150px;
+    width: 350px;
+}
+
+#Moroko{
+    height: 150px;
+    width: 350px;
+}
+
+#Zuleyha{
+    height: 150px;
+    width: 350px;
+}
+
+#Fugitiva{
+    height: 150px;
+    width: 350px;
+}
+/*Próximamente en Televisión Creativa*/
+
+.proximamente{
+    font-family: var(--texto-principal);
+    color: var(--color-texto);
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+/*Horarios de los programas*/
+
+.carrousel-programas{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.pgm-horarios{
+    background-image: url(../img/Ariel\ en\ su\ salsa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 85%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+.pgm-horarios-uno{
+    background-image: url(../img/División\ Noticias.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 70%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+.pgm-horarios-dos{
+    background-image: url(../img/Noticiero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 70%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+.pgm-horarios-tres{
+    background-image: url(../img/Zuleyha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 75%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+.pgm-horarios-cuatro{
+    background-image: url(../img/Fútbol.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+.pgm-horarios-cinco{
+    background-image: url(../img/Pasapalabra.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    padding: 25px 25px 25px 25px;
+    height: 300px;
+    width: 140px;
+    position: static;
+}
+
+/*Canales propios*/
+
+.titulo-nombres-canales{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 15px;
+}
+
+/*Logo de los canales propios*/
+
+img{
+    height: 65px;
+    width: 130px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+/*Texto de los canales propios*/
+
+#nombre-canales-propios{
+    margin-left: 45px;
+    margin-right: 45px;
+    font-weight: 700;
+}
+
+#mardel{
+    height: 150px;
+    width: 240px;
+    background-color: var(--azul);
+    border-radius: 10px;
+}
+
+#bahia{
+    height: 150px;
+    width: 240px;
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+#rosario{
+    height: 150px;
+    width: 240px;
+    background-color: var(--rojo);
+    border-radius: 10px;
+}
+
+#quilmes{
+    height: 150px;
+    width: 240px;
+    background-color: var(--azul);
+    border-radius: 10px;
+}
+
+#cordoba{
+    height: 150px;
+    width: 240px;
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+.canales-propios{
+    font-family: var(--texto-principal);
+    color: var(--color-texto);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.canales-propios h2{
+    font-family: var(--texto-principal);
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+/* Pie de página */
+
+.contenedor-pie-de-pagina{
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.direccion{
+    font-family: var(--texto-principal);
+    color: var(--color-texto);
+}
+
+.redes-sociales{
+    font-family: var(--texto-principal);
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+#facebook{
+    height: 50px;
+    width: 50px;
+    padding:20px 20px 20px 20px;
+}
+
+#twitter{
+    height: 50px;
+    width: 50px;
+    padding:20px 20px 20px 20px;
+}
+
+#instagram{
+    height: 50px;
+    width: 50px;
+    padding:20px 20px 20px 20px;
+}
+
+#twitch{
+    height: 50px;
+    width: 50px;
+    padding:20px 20px 20px 20px;
+}
+
+#youtube{
+    height: 50px;
+    width: 50px;
+    padding:20px 20px 20px 20px;
+}
