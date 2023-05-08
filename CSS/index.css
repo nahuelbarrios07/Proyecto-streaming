@@ -81,6 +81,8 @@ body{
     font-weight: 700;
     color: var(--color-texto);
     text-shadow: 1px 1px 3px black;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .programa-principal p{
@@ -89,6 +91,8 @@ body{
     color: var(--color-texto);
     text-shadow: 1px 1px 3px black;
     max-width: 70%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 /*Botones del programa principal*/
@@ -128,6 +132,13 @@ body{
     border-radius: 4px;
 }
 
+/*Formato de los títulos*/
+
+#titulos{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
 /*Programas recomendados*/
 
 .otros-programas{
@@ -140,11 +151,11 @@ body{
 
 .recomendados{
     display: flex;
-    align-items:center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
-/*Tamaño de las imagenes de los programas*/
+/*Tamaño de las imagenes de los programas recomendados*/
 
 h4{
     font-family: var(--fuente-logo);
@@ -217,7 +228,7 @@ h4{
     width: 140px;
     position: static;
 }
-/*Próximamente en Televisión Creativa*/
+/*Próximos programas*/
 
 .proximamente{
     font-family: var(--texto-pagina);
@@ -230,8 +241,8 @@ h4{
 
 .carrousel-programas{
     display: flex;
-    align-items:center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     text-shadow: 1px 1px 3px black;
 }
 
@@ -301,15 +312,13 @@ h4{
     position: static;
 }
 
-/*Canales propios*/
+/*Carrousel Canales propios*/
 
 .titulo-nombres-canales{
     display: flex;
     width: 90%;
     margin: auto;
     gap: 15px;
-    padding: 25px 0px 25px 0px;
-
 }
 
 /*Logo de los canales propios*/
@@ -317,7 +326,8 @@ h4{
 img{
     height: 115px;
     width: 130px;
-    margin: 40px 40px 40px 40px;
+    margin-top: 50%;
+    margin-left: 5%;
 }
 
 /*Texto de los canales propios*/
@@ -386,6 +396,7 @@ img{
 }
 
 /* Podcast */
+
 .podcast{
     font-family: var(--texto-pagina);
     color: var(--color-texto);
@@ -395,7 +406,7 @@ img{
 .carrousel-podcast{
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-around;
     text-shadow: 1px 1px 3px black;
 }
 
@@ -466,40 +477,43 @@ img{
     gap: 50px;
     width: 90%;
     margin: auto;
+    padding: 7px 7px 7px 7px;
 }
 
 .direccion{
     font-family: var(--texto-pagina);
     color: var(--color-texto);
+    margin-top: 6vh;
 }
 
 .redes-sociales{
     font-family: var(--texto-pagina);
     font-weight: 600;
     color: var(--color-texto);
+    margin-top: 6vh;
 }
 
 #facebook{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #twitter{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #instagram{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #twitch{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #youtube{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }

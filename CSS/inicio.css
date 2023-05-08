@@ -1,0 +1,76 @@
+:root{
+    --fondo-streaming: rgb(25, 25, 27);
+    --color-logo: rgb(239, 239, 239);
+    --color-texto: rgb(255, 255, 255);
+    --fuente-logo: 'Ubuntu', sans-serif;
+    --texto-pagina: 'Figtree', sans-serif;
+    --vivo:rgb(255, 0, 0);
+    --rojo: rgb(255, 0, 115);
+    --verde: rgb(121, 255, 18);
+    --azul: rgb(0, 128, 255);
+    --fondo-canales: rgb(199, 195, 206);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: var(--fondo-streaming);
+    width: 90%;
+}
+
+/*Logo de Televisión Creativa*/
+
+.logo{
+    font-family: var(--fuente-logo);
+    color: var(--color-logo);
+    padding: 30px 30px 30px 0px;
+    font-weight: 700;
+
+}
+
+
+/*Presentación Principal*/
+
+.texto-principal{
+    background-image: url(../img/Retro\ televisión.jpg);    
+    background-position: center;
+    background-position-y: 40%;
+    background-position-x: 20%;
+    height: 85vh;
+}
+
+.presentacion{
+    padding-top: 25%;
+    margin-left: 5%;
+}
+
+.texto-principal h1{
+    font-family: var(--texto-pagina);
+    font-weight: 700;
+    color: var(--color-texto);
+    text-shadow: 1px 1px 3px black;
+}
+
+.botones ul{
+    display: flex;
+}
+
+.botones a{
+    text-decoration: none;
+    font-family: var(--texto-pagina);
+    color: var(--color-texto);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#btn-iniciar-sesion{
+    background-color: crimson;
+    height: 40px;
+    width: 120px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+}

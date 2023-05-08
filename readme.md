@@ -1,0 +1,1 @@
+Esta página consiste en una plataforma de streaming en el cual el usuario puede elegir el programa de televisión que quiere ver y ver la transmisión de los canales en vivo, además de escuchar los podcast que se suben a esta página, siempre entrando con el usuario y contraseña.
